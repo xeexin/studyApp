@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mypageAndLogoutFragmentFrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MypageAndLogoutFragment">
+
+
+    <TextView
+        android:id="@+id/txt_mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="MY PAGE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textColor="@color/KAU_BLUE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_hintName"
+        app:layout_constraintStart_toEndOf="@+id/txt_hintName"
+        app:layout_constraintTop_toTopOf="@+id/txt_hintName" />
+
+    <TextView
+        android:id="@+id/txt_myDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="학과"
+        android:textColor="@color/KAU_BLUE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_hintDept"
+        app:layout_constraintStart_toEndOf="@+id/txt_hintDept"
+        app:layout_constraintTop_toTopOf="@+id/txt_hintDept" />
+
+    <TextView
+        android:id="@+id/txt_myKauId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="학번"
+        android:textColor="@color/KAU_BLUE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_hintKauId"
+        app:layout_constraintStart_toEndOf="@+id/txt_hintKauId"
+        app:layout_constraintTop_toTopOf="@+id/txt_hintKauId" />
+
+    <TextView
+        android:id="@+id/txt_myEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:textAlignment="center"
+        android:textColor="@color/KAU_BLUE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_hintEmail"
+        app:layout_constraintStart_toEndOf="@+id/txt_hintEmail"
+        app:layout_constraintTop_toTopOf="@+id/txt_hintEmail" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="로그아웃"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_mypage" />
+
+    <TextView
+        android:id="@+id/txt_hintName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:ellipsize="middle"
+        android:text="이름:    "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mypage" />
+
+    <TextView
+        android:id="@+id/txt_hintNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:ellipsize="middle"
+        android:text="닉네임:  "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hintName" />
+
+    <TextView
+        android:id="@+id/txt_hintDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:ellipsize="middle"
+        android:text="학과:    "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hintNickname" />
+
+    <TextView
+        android:id="@+id/txt_hintKauId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:ellipsize="middle"
+        android:text="학번:    "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hintDept" />
+
+    <TextView
+        android:id="@+id/txt_hintEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:ellipsize="middle"
+        android:text="이메일:  "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hintKauId" />
+
+    <EditText
+        android:id="@+id/Edit_nickname"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/KAU_BLUE"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_hintNickname"
+        app:layout_constraintStart_toEndOf="@+id/txt_hintNickname"
+        app:layout_constraintTop_toTopOf="@+id/txt_hintNickname" />
+
+    <Button
+        android:id="@+id/btn_editnick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정하기"
+        app:layout_constraintBottom_toBottomOf="@+id/Edit_nickname"
+        app:layout_constraintStart_toEndOf="@+id/Edit_nickname"
+        app:layout_constraintTop_toTopOf="@+id/Edit_nickname" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

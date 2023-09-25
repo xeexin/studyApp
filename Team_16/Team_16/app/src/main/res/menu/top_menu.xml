@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/MypageFragment"
+        android:icon="@drawable/ic_baseline_manage_accounts_24"
+        android:title="마이페이지" />
+    <item
+        android:id="@+id/stopwatchFragment_"
+        android:icon="@drawable/ic_baseline_timer_24"
+        android:title="스톱워치" />
+    <item
+        android:id="@+id/ranking"
+        android:icon="@drawable/ic_baseline_area_chart_24"
+        android:title="랭킹" />
+    <item
+        android:id="@+id/calendar_fragment"
+        android:icon="@drawable/ic_baseline_edit_calendar_24"
+        android:title="캘린더" />
+</menu>

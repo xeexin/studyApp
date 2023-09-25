@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/entryFragment">
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.team_16.SignupFragment"
+        android:label="회원 가입"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signupFragment_to_entryFragment"
+            app:destination="@id/entryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.example.team_16.EntryFragment"
+        android:label="로그인"
+        tools:layout="@layout/fragment_entry">
+        <action
+            android:id="@+id/action_entryFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_findePWFragment"
+            app:destination="@id/findePWFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_stopwatchFragment_"
+            app:destination="@id/stopwatchFragment" />
+        <action
+            android:id="@+id/action_entryFragment_self"
+            app:destination="@id/entryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.example.team_16.TodoFragment"
+        android:label="투두리스트"
+        tools:layout="@layout/fragment_todo" />
+    <fragment
+        android:id="@+id/findePWFragment"
+        android:name="com.example.team_16.FindePWFragment"
+        android:label="비밀번호찾기"
+        tools:layout="@layout/fragment_newpw">
+        <action
+            android:id="@+id/action_findePWFragment_to_entryFragment3"
+            app:destination="@id/entryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stopwatchFragment"
+        android:name="com.example.team_16.StopwatchFragment"
+        android:label="스톱워치"
+        tools:layout="@layout/fragment_stopwatch">
+        <action
+            android:id="@+id/action_stopwatchFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
+        <action
+            android:id="@+id/action_stopwatchFragment_to_statisticFragment2"
+            app:destination="@id/statisticFragment" />
+        <action
+            android:id="@+id/action_stopwatchFragment_to_mypageAndLogoutFragmentFrag2"
+            app:destination="@id/mypageAndLogoutFragmentFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/mypageAndLogoutFragmentFrag"
+        android:name="com.example.team_16.MypageAndLogoutFragment"
+        android:label="회원 정보"
+        tools:layout="@layout/fragment_mypage_and_logout">
+        <action
+            android:id="@+id/action_mypageAndLogoutFragment_to_entryFragment"
+            app:destination="@id/entryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticFragment"
+        android:name="com.example.team_16.StatisticFragment"
+        android:label="통계"
+        tools:layout="@layout/fragment_statistic" />
+</navigation>
